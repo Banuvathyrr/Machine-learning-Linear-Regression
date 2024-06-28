@@ -36,6 +36,16 @@ Linear regression relies on several key assumptions:
 3. Homoscedasticity: The variance of residuals is constant across all levels of the independent variables.  
 4. Normality: Residuals are normally distributed
 
+### Metrics for model evaluation
+**R-squared (\( R^2 \))**  
+The R-squared value measures the proportion of the variance in the dependent variable that is predictable from the independent variables. It ranges from 0 to 1, where a higher value indicates a better fit.
+
+**Mean Squared Error (MSE)**  
+The MSE is the average of the squared differences between the observed and predicted values. It provides a measure of the model's accuracy.
+
+**Adjusted R-squared** 
+Adjusted R-squared adjusts the R-squared value based on the number of predictors in the model. It is useful for comparing models with different numbers of independent variables.
+
 ### Implementation in Python
 
 #### Linear Regression Example in Python
@@ -71,5 +81,8 @@ mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
 print(f'Mean Squared Error: {mse}')
-print(f'R-squared: {r2}')
+print(f'R-squared: {r2}')  
+
+
+
 
